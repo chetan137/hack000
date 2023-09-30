@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="with-device-width, initial-scale=1.0">
+       <title>HOME PAGE | APSIT</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" oneclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">OUR TEAM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" oneclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>Thane's Top University</h1>
+    <p>A Technology Driven That Makes The Learners More Flexible & Effective.<br>It's A Most Comfortable Platform For All !</p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+</div>
+</section>
+
+<!------ Course ------>
+
+<section class="course">
+    <h1>Course We Offer To Our Students</h1>
+    <p>A Technology Driven Learning System That Enhances The Capability Of The Educators While Enabling the learners to learn more efficiently, effectively, comfortably, and flexibly.</p>
+
+    <div class ="row"> 
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Aachal Will Introduce</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Aachal Will Introduce</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Aachal Will Introduce</p>
+        </div>
+</section>
+
+<!----- Campus ----->
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p> Bhagwaan Jaane Yaha Kya Aayega Uff </p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="image/chetan.jpg">
+            <div class="layer">
+                <h3>Head</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="image/aachal.jpg">
+            <div class="layer">
+                <h3>Co-Head</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="image/prachi.jpg">
+            <div class="layer">
+                <h3>Manager</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------Facilites------>
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Top Qualified Teachers</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="image/library.png">
+            <h3>World Class library</h3>
+            <p>The Library has an extensive collection of books with 22000+ books in volumes covering all aspects of engineering in the field of Civil Engineering, Mechanical Engineering, Information Technology, Computer Engineering, Electronics, Electronics & Telecommunication, Bio-medical and Management. It also has rich resources in areas of Social science, humanities etc.
+                Reference collection of library consists of reference books.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="image/canteen.jpg">
+                <h3>Tasty And Healthy Food</h3>
+                <p>All Best Items Served With Fresh Material.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="image/playground.jpg">
+                <h3>Play Ground</h3>
+                <p>A Ground For Students That Can play Outdoors Game And Enjoy</p>
+            </div>
+        </div>    
+
+</section>
+
+<!------Testimonials------>
+
+<section class="testimonial">
+    <h1>What Our Student Says</h1>
+    <p>Its Awesome University That Helps You To Grow Higher</p>
+
+    <div class="row">
+        <div Class="testimonial-col">
+            <img src="image/abhishek.jpg">
+            <div>
+                <p>All Faculties Are Good And Helpfull</p>
+                <h3>Abhishek Sali</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div Class="testimonial-col">
+            <img src="image/premanshu.jpg">
+            <div>
+                <p>Its A Best University</p>
+                <h3>Premanshu Patil</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!------Call To Action------>
+
+<section class="cta">
+    <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!------Footer------>
+
+<section Class="footer">
+    <h4>About Us</h4>
+    <p>Ideate And Implement A System<br>To Enhance The Quality Of Education In Rural Areas.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-linkedin"></i>
+     </div>
+     <p>Made By <i class="fa fa-heart-o"></i> JagdishKumar Nayak <i class="fa fa-heart-o"></i></p>
+</section>
+
+<!------JavaScript For Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }    
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+</script>
+
+</body>
+</html>

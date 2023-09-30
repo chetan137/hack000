@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AP Project</title>
-    <link rel="stylesheet" href="miniP.css">
+    <link rel="stylesheet" href="hack.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
@@ -51,8 +51,8 @@
                     <option value="a">CBSC</option>
                 </select>
             </div>
-            <div class="centres"><a href="#">AP Centres</a></div>
-            <div class="centres1"><a href="#">AP Skills</a></div>
+            <div onclick="center()" id="center" class="centres"><a href="#">AP Centres</a></div>
+            <div onclick="skill()" id="skill" class="centres1"><a href="#">Facilities</a></div>
             <div class="centres2"><a href="#">Ask Doubt</a></div>
             <button>
                 <div onclick="login()" id="userNumber" class="btnlogin"><a href="#">Login/Register</a></div>
@@ -61,8 +61,7 @@
             <!-- <img src="https://www.pw.live//version14/assets/img/pw-store.gif" style="margin-top:-9px" alt="store-logo" -->
             <!-- width="141" height="58" class="d-md-block d-none logostore "> -->
         </div>
-        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXYiIzm60bt-hjnYkFHMvjQpZ11l9p6qMNdUWXieYoSEawpFLk2wpt55yShr8YePudBGY&usqp=CAU"
-            style="height: 3.3rem; position: absolute; left: 5rem; top: 0.2rem;">
+        <img src="image/logo.png" style="height: 3.3rem; position: absolute; left: 5rem; top: 0.2rem;">
 
         <div class="box">THE MOST <br>
             <div class="lp">LEARNING PLATFORMS
@@ -85,8 +84,10 @@
                         style="background-color: transparent; height: 45px; width:300px; border: none; font-size: 25px;font-weight: 400; color: black;  border: solid red;">
                 </div> -->
                 <img src="apple2.png" style="height: 2.5rem;" alt="apple">
-                <div class="div"><img src="google2.png" style="height: 2.5rem;" alt=" googleplay"></div>
-                <div class="pwimg"><img src=" " style="height:25rem;"></div>
+                <div class="div"><img src="google2.png"
+                        onclick="https://play.google.com/store/apps/details?id=com.moodle.moodlemobile"
+                        style="height: 2.5rem;" alt=" googleplay"></div>
+                <div class="pwimg"><img src="image/apsit.png" style="height:10rem; "></div>
             </div>
 
             <div class="animation">
@@ -117,32 +118,33 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <i class="fa-solid fa-image"></i>
-                        <a href="#">Gallery</a>
+                        <i class="fa-solid fa-house"></i>
+                        <a style="background-color: transparent; cursor: pointer;" onclick="adfile1()" valu="about"
+                            id="btn1">About</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        <a href="#">Shortcuts</a>
+                        <a style="cursor: pointer;" onclick="adfile()" valu="adress" id="btn">Shortcuts</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-photo-film"></i>
-                        <a href="#">Exhibits</a>
+                        <a onclick="adfile2()" valu="exhi" id="btn2" href="#">Exhibits</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-calendar-days"></i>
-                        <a href="#">Events</a>
+                        <a onclick="adfile3()" valu="event" id="btn3" href="#">Campus</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-store"></i>
-                        <a href="#">Store</a>
+                        <a onclick="adfile4()" valu="store" id="btn4" href="#">Store</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="#">Contact</a>
+                        <a onclick="adfile5()" valu="Contact" id="btn5" href="#">Contact</a>
                     </li>
                     <li>
                         <i class="fa-regular fa-comments"></i>
-                        <a href="#">Feedback</a>
+                        <a onclick="adfile6()" valu="Feedback" id="btn6" href="#">Feedback</a>
                     </li>
                 </ul>
             </div>

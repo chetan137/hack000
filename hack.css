@@ -125,6 +125,11 @@ a {
 
 }
 
+.menu a {
+    background: transparent;
+    z-index: 5;
+}
+
 .sidebar_menu .social_media i:hover {
     opacity: 2;
     transform: scale(1.2);
